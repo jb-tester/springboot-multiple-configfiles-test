@@ -1,0 +1,23 @@
+package com.mytests.springboot.projectwithmultipleconfigfiles;
+
+import com.mytests.springboot.conditionalonpropertiesbundle.BundleBean0;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProjectWithMultipleConfigfilesApplication implements CommandLineRunner {
+
+	@Autowired
+	private BundleBean0 bundleBean0;
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProjectWithMultipleConfigfilesApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+	}
+}
