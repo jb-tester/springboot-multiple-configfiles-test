@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MainAppPropertiesVersusExtraAppProperties {
+    // https://youtrack.jetbrains.com/issue/IDEA-280929
     // Check the property key defined both in
     // application.properties and 
     // config/application.properties
