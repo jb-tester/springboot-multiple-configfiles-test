@@ -1,7 +1,5 @@
 package com.mytests.springboot.projectwithmultipleconfigfiles;
 
-import com.mytests.springboot.conditionalonpropertiesbundle.BundleBean0;
-import com.mytests.springboot.conditionalonpropertiesbundle.BundleBean2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -18,6 +16,8 @@ public class ProjectWithMultipleConfigfilesApplication implements CommandLineRun
 	private MainAppPropertiesVersusMainAppYaml mainAppPropertiesVersusMainAppYaml;
 	@Autowired
 	private ExtraAppPropertiesVersusAdditionalLocationProperties extraAppPropertiesVersusAdditionalLocationProperties;
+	@Autowired
+	private MainAppVersusImportedConfig mainAppVersusImportedConfig;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectWithMultipleConfigfilesApplication.class, args);
@@ -29,5 +29,6 @@ public class ProjectWithMultipleConfigfilesApplication implements CommandLineRun
 	mainAppPropertiesVersusAdditionalLocationProperties.test();
 	mainAppPropertiesVersusMainAppYaml.test();
 	extraAppPropertiesVersusAdditionalLocationProperties.test();
+	mainAppVersusImportedConfig.test();
 	}
 }

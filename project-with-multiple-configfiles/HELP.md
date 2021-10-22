@@ -12,7 +12,8 @@ multiple files:
     recognized, precedence is not checked https://youtrack.jetbrains.com/issue/IDEA-280929
 - spring.config.additional-location; (add manually to SB fileset)
     recognized , precedence is not checked https://youtrack.jetbrains.com/issue/IDEA-281010
-spring.config.import;
+- spring.config.import:
+    recognized, precedence is checked
 
 custom:
 - spring.config.location - ok
