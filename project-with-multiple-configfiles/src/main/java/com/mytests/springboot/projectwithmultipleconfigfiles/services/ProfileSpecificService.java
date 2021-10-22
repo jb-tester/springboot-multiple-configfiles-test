@@ -1,4 +1,4 @@
-package com.mytests.springboot.projectwithmultipleconfigfiles;
+package com.mytests.springboot.projectwithmultipleconfigfiles.services;
 
 /**
  * *
@@ -9,5 +9,5 @@ package com.mytests.springboot.projectwithmultipleconfigfiles;
 
 public interface ProfileSpecificService {
     String getId();
-    void test();
+
 }
