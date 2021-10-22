@@ -15,6 +15,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class MainAppPropertiesVersusAdditionalLocationProperties {
     // https://youtrack.jetbrains.com/issue/IDEA-281010
+    // specify spring.config.additional-location=classpath:/additional_config.properties in the SB run configuration
+    // and add this file as extra configuration to the SB fileset to test
     // Check the property key defined both in
     // application.properties and 
     // additional_config.properties defined using spring.config.additional-location
