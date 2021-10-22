@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * *
  */
 @Configuration
-@ConditionalOnProperty(name = "myconditions.condition2", havingValue = "main_app_properties_c2", matchIfMissing = false)
+@ConditionalOnProperty(name = "myconditions.condition2", havingValue = "application_yaml_c2", matchIfMissing = false)
 public class Bean2Config {
     @Bean
     public BundleBean2 bundleBean2() {

@@ -4,6 +4,8 @@ profile-specific files (both yaml and properties);
 application-default.* file for default profiles;
 
 multiple files:
+- both application.yaml and application.properties:
+- both application.yaml and application.yml:
 - extra config/application.* file:
     both are recognized, precedence is not checked https://youtrack.jetbrains.com/issue/IDEA-280929
 - spring.config.additional-location; (add manually to SB fileset)
@@ -11,7 +13,7 @@ multiple files:
 spring.config.import;
 
 custom:
-spring.config.location
+- spring.config.location - ok
 
 check precedence for all variants
 

@@ -14,6 +14,8 @@ public class ProjectWithMultipleConfigfilesApplication implements CommandLineRun
 	private MainAppPropertiesVersusExtraAppProperties mainAppPropertiesVersusExtraAppProperties;
 	@Autowired
 	private MainAppPropertiesVersusAdditionalLocationProperties mainAppPropertiesVersusAdditionalLocationProperties;
+	@Autowired
+	private MainAppPropertiesVersusMainAppYaml mainAppPropertiesVersusMainAppYaml;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectWithMultipleConfigfilesApplication.class, args);
@@ -23,5 +25,6 @@ public class ProjectWithMultipleConfigfilesApplication implements CommandLineRun
 	public void run(String... args) throws Exception {
 	mainAppPropertiesVersusExtraAppProperties.test();
 	mainAppPropertiesVersusAdditionalLocationProperties.test();
+	mainAppPropertiesVersusMainAppYaml.test();
 	}
 }

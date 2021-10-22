@@ -23,7 +23,7 @@ public class MainAppPropertiesVersusAdditionalLocationProperties {
     // matching value is provided in application.properties
     //  not matching value is provided in additional_config.properties
     @Autowired(required = false)
-    private BundleBean1 bundleBean1;
+    private BundleBean1 bundleBean1; // should not be available
     @Autowired
     private Environment environment;
 
