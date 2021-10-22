@@ -10,12 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ProjectWithMultipleConfigfilesApplication implements CommandLineRunner {
 
-	
-	
-	@Autowired(required = false)
-	private BundleBean2 bundleBean2;
 	@Autowired
 	private MainAppPropertiesVersusExtraAppProperties mainAppPropertiesVersusExtraAppProperties;
+	@Autowired
+	private MainAppPropertiesVersusAdditionalLocationProperties mainAppPropertiesVersusAdditionalLocationProperties;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectWithMultipleConfigfilesApplication.class, args);
@@ -23,6 +21,7 @@ public class ProjectWithMultipleConfigfilesApplication implements CommandLineRun
 
 	@Override
 	public void run(String... args) throws Exception {
-	mainAppPropertiesVersusExtraAppProperties.test();	
+	mainAppPropertiesVersusExtraAppProperties.test();
+	mainAppPropertiesVersusAdditionalLocationProperties.test();
 	}
 }
