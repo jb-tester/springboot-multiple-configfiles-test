@@ -3,3 +3,5 @@ spring:
     banner-mode: console
   banner:
     location: classpath:mybanner.txt
+  config:
+    import: imported/imported_config.yaml
