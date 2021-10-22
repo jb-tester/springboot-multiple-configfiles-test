@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class MainAppPropertiesVersusMainAppYaml {
-    //
+    // https://youtrack.jetbrains.com/issue/IDEA-281022
     // Check the property key defined both in
     // application.properties and 
     // application.yaml
