@@ -1,2 +1,6 @@
 myconditions:
   condition2: application_yaml_c2
+  condition4: application_yaml_c4
+spring:
+  config:
+    import: imported/imported_config.yaml
