@@ -1,6 +1,5 @@
 package com.mytests.springboot.projectwithmultipleconfigfiles;
 
-import com.mytests.springboot.conditionalonpropertiesbundle.Bean6Config;
 import com.mytests.springboot.conditionalonpropertiesbundle.BundleBean6;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
@@ -15,17 +14,16 @@ import java.util.Arrays;
  * <p>Project: springboot-multiple-configfiles-test</p>
  * *
  */
-@Service @Profile("bar")
-public class PropertyPresenceForActiveProfile_Bar implements PropertyPresenceForActiveProfile {
+@Service @Profile({"!foo && !bar"})
+public class Profile_SpecificService_NoProfiles implements ProfileSpecificService {
     // check that only the property key from the active profile-specific configuration file is considered
     // set the 'foo' profile to check
-
     @Autowired(required = false)
-    private BundleBean6 bean6;  // should not be available
+    private BundleBean6 bean6;   // should not be available
 
     @Override
     public String getId() {
-        return "bar";
+        return "not foo, not bar";
     }
     @Autowired
     private Environment environment;

@@ -1,7 +1,5 @@
 package com.mytests.springboot.projectwithmultipleconfigfiles;
 
-import org.springframework.stereotype.Service;
-
 /**
  * *
  * <p>Created by irina on 10/22/2021.</p>
@@ -9,7 +7,7 @@ import org.springframework.stereotype.Service;
  * *
  */
 
-public interface PropertyPresenceForActiveProfile {
+public interface ProfileSpecificService {
     String getId();
     void test();
 }

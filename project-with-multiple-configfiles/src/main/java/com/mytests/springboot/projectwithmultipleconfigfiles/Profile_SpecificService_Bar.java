@@ -14,21 +14,20 @@ import java.util.Arrays;
  * <p>Project: springboot-multiple-configfiles-test</p>
  * *
  */
-@Service @Profile("foo")
-public class PropertyPresenceForActiveProfile_Foo implements PropertyPresenceForActiveProfile {
+@Service @Profile("bar")
+public class Profile_SpecificService_Bar implements ProfileSpecificService {
     // check that only the property key from the active profile-specific configuration file is considered
     // set the 'foo' profile to check
 
     @Autowired(required = false)
-    private BundleBean6 bean6; // should be available if 'foo' profile is set
-
-    @Autowired
-    private Environment environment;
+    private BundleBean6 bean6;  // should not be available
 
     @Override
     public String getId() {
-        return "foo";
+        return "bar";
     }
+    @Autowired
+    private Environment environment;
 
     @Override
     public void test() {
