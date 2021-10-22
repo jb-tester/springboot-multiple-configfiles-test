@@ -1,6 +1,7 @@
 https://youtrack.jetbrains.com/issue/IDEA-180498
 
-profile-specific files (both yaml and properties);
+profile-specific files (both yaml and properties):
+  - only active profile-specific config is used, the properties from not active profiles-specific files are not considered: ok
 application-default.* file for default profiles;
 
 multiple files:
