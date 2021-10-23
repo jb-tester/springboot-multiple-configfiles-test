@@ -21,6 +21,8 @@ public class ProjectWithMultipleConfigfilesApplication implements CommandLineRun
     private MainAppVersusImportedConfig mainAppVersusImportedConfig;
     @Autowired
     private UseOnlyActiveProfileConfig useOnlyActiveProfileConfig;
+    @Autowired
+    private AllPropertiesVersusActiveProfileSpecific allPropertiesVersusActiveProfileSpecific;
 
     public static void main(String[] args) {
         SpringApplication.run(ProjectWithMultipleConfigfilesApplication.class, args);
@@ -34,5 +36,6 @@ public class ProjectWithMultipleConfigfilesApplication implements CommandLineRun
         extraAppPropertiesVersusAdditionalLocationProperties.test();
         mainAppVersusImportedConfig.test();
         useOnlyActiveProfileConfig.test();
+        allPropertiesVersusActiveProfileSpecific.test();
     }
 }
