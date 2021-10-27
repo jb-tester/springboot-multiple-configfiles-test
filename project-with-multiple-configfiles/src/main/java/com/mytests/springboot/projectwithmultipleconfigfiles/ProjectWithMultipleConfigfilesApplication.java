@@ -23,6 +23,8 @@ public class ProjectWithMultipleConfigfilesApplication implements CommandLineRun
     private UseOnlyActiveProfileConfig useOnlyActiveProfileConfig;
     @Autowired
     private AllPropertiesVersusActiveProfileSpecific allPropertiesVersusActiveProfileSpecific;
+    @Autowired
+    private UseDefaultProfileIfNoProfilesAreActive useDefaultProfileIfNoProfilesAreActive;
 
     public static void main(String[] args) {
         SpringApplication.run(ProjectWithMultipleConfigfilesApplication.class, args);
@@ -37,5 +39,6 @@ public class ProjectWithMultipleConfigfilesApplication implements CommandLineRun
         mainAppVersusImportedConfig.test();
         useOnlyActiveProfileConfig.test();
         allPropertiesVersusActiveProfileSpecific.test();
+        useDefaultProfileIfNoProfilesAreActive.test();
     }
 }

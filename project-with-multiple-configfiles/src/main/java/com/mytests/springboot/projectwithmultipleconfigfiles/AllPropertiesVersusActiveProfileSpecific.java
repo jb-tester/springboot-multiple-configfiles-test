@@ -32,8 +32,8 @@ public class AllPropertiesVersusActiveProfileSpecific {
 
 
     public void test() {
-        System.out.println("Check that the bean is not available for autowiring if specific profile set \n" +
-                "since the property with not matching value is defined \n " +
+        System.out.println("Check that the bean is available for autowiring ONLY if specific profile ('foo') is NOT set \n" +
+                "since the property with not matching value is defined \n" +
                 "in the active profile's specific configuration file that overrides all other configs\n" +
                 "and is available with no or different profiles set");
         System.out.println(profileSpecificService.getId());

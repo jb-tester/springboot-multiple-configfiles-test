@@ -6,7 +6,9 @@ profile-specific files (both yaml and properties):
          precedence is not checked. https://youtrack.jetbrains.com/issue/IDEA-281058
   - the property defined in active profile-specific yaml file ??
 
-application-default.* file for default profiles;
+application-default.* file for default profiles:
+   - default profile config should override all others if no active profiles are set:
+     https://youtrack.jetbrains.com/issue/IDEA-281357
 
 multiple files:
 - both application.yaml and application.properties: 
